@@ -1,0 +1,10 @@
+{
+    "question": "Q60: This is Question 60.",
+    "options": [
+        "option A",
+        "option B",
+        "option C",
+        "option D"
+    ],
+    "correct_answer": "option C"
+}

@@ -1,0 +1,67 @@
+
+body{
+    margin: 0;
+    padding: 0;
+}
+header{
+    background-color: red;
+    margin-top: -1px;
+    padding: 0;
+}
+.image{
+    width: 100%;
+    height: 5rem;
+}
+.image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+footer{
+    width: 100%;
+}
+
+.title{
+    margin-top: 4rem;
+    text-align: center;
+}
+.title h3{
+    font-size: 2rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.selected{
+    text-align: center;
+    margin: auto;
+    width: 95%;
+    height: fit-content;
+}
+
+.selected p{
+    font-size: 1.25rem;
+}
+.question_container{
+    padding: 0rem 4rem;
+}
+
+.question{
+    font-size: 1.5rem;
+}
+
+.options{
+    list-style: none;
+}
+
+#questions_div{
+    
+    margin-left: 8rem;
+}
+
+label{
+    text-transform: capitalize;
+    font-size: 1.2rem;  
+}
+
+li{
+    padding: 0.3rem;
+}
