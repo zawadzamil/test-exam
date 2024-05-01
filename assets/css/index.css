@@ -65,3 +65,29 @@ label{
 li{
     padding: 0.3rem;
 }
+.button{
+    float: right;
+    margin-right: 4rem;
+    margin-bottom: 4rem;
+}
+
+.button button{
+    padding: 0.75rem 1.75rem ;
+    background-color: rgb(1, 1, 50);
+    border: none;
+    border-radius: 0.2rem;
+}
+
+.button button .btn_txt{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.2rem;
+    color: white;
+    text-decoration: none;
+}
+
+.question_container input{
+    cursor: pointer;
+}
+.question_container label{
+    cursor: pointer;
+}

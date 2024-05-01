@@ -7,11 +7,12 @@ const questions = filenames.filter(file => {
 
 console.log(questions.length)
 
+let x = 1;
+let initIndex = 1;
 
 const randomQuestionIndex = getRandomNumbers(0, 99, 20)
 
 randomQuestionIndex.forEach(index => {
-    console.log(questions[index])
 
     document.getElementById('quetionsNames').innerHTML += questions[index] + ', '
 
@@ -25,10 +26,14 @@ randomQuestionIndex.forEach(index => {
         })
         .then(data => {
             
-            let index = 1   ;
+            let index = initIndex;
+
+            const current = x;
+
+            const text = `${current}: `+ data.question.substring(data.question.indexOf(':') + 1 )
            
             const questionContainer = $("<div>").addClass("question_container");
-            const questionElement = $("<p>").addClass("question").text(data.question);
+            const questionElement = $("<p>").addClass("question").text(text);
             questionContainer.append(questionElement);
         
             // Create options list
@@ -49,6 +54,9 @@ randomQuestionIndex.forEach(index => {
         
             // Append question container to main container
             $("#questions_div").append(questionContainer);
+
+            x++;
+            initIndex++;    
 
         })
         .catch(error => {
